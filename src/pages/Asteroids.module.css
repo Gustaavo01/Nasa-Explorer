@@ -1,0 +1,93 @@
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #ffa07a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info {
+  font-size: 1rem;
+  color: #8b949e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: rgba(31, 41, 51, 0.9);
+  border-radius: 12px;
+  padding: 1.8rem;
+  border-left: 6px solid #ffa07a;
+  box-shadow: 0 4px 16px rgba(255, 160, 122, 0.25);
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px) scale(1.01);
+}
+
+.card.dangerous {
+  border-left-color: #ff4c4c;
+}
+
+.card h3 {
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin: 0.3rem 0;
+  color: #e1e8ee;
+  font-size: 0.95rem;
+}
+
+.card strong {
+  color: #58a6ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
